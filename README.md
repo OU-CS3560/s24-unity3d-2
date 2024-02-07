@@ -1,14 +1,14 @@
 # Team Name
 
-Short description of the project.
+We are making the game bomberman!
 
 ## Team Information
 
 **Team ID:** team-id (our internal id)  
-**Problem/Project name:** (e.g. MicroRTS, Killer Sudoku, etc.)  
-**Team Name:** Team Name   
+**Problem/Project name:** Bomberman Unity2D 
+**Team Name:** webomberchicken456   
 **Members (N):**  
-- Rufus Bobcat (email: bobcat@ohio.edu, gh: https://github.com/rufusbobcat)
+- Minh Le - ml007921@ohio.edu - https://github.com/minhOU93
 
 ## About this project
 
@@ -16,7 +16,8 @@ A longer version of your project description.
 
 ## Platform
 
-Describe your platform, programing languages that will be used to implement your project.
+Unity Engine
+c#
 
 ## Frameworks/Tools
 
