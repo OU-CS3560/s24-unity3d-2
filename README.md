@@ -1,4 +1,4 @@
-# Team Name
+# Team Name: WeBomberChicken456
 
 We are making the game bomberman!
 
@@ -9,10 +9,11 @@ We are making the game bomberman!
 **Team Name:** webomberchicken456   
 **Members (N):**  
 - Minh Le - ml007921@ohio.edu - https://github.com/minhOU93
+- Viet Huy Vu - vv761622@ohio.edu - https://github.com/viethuyvu
 
 ## About this project
 
-A longer version of your project description.
+We are trying to remake the bomberman game on Unity. We are hoping to get a working game and adding our own new idea to the classic game. In this project we will learn to work with Unity, and getting to know C# for the first time. 
 
 ## Platform
 
@@ -21,7 +22,9 @@ c#
 
 ## Frameworks/Tools
 
-Describe frameworks and/or tools that this project will be using.
+Visual Studio
+VS Code
+Unity
 
 ## How to build/compile
 
