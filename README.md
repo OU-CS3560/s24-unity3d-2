@@ -10,7 +10,7 @@ We are making the game bomberman!
 **Members (N):**  
 - Minh Le - ml007921@ohio.edu - https://github.com/minhOU93
 - Viet Huy Vu - vv761622@ohio.edu - https://github.com/viethuyvu
-
+- Tin Vuong - nv059721@ohio.edu - https://github.com/wechicken456
 ## About this project
 
 We are trying to remake the bomberman game on Unity. We are hoping to get a working game and adding our own new idea to the classic game. In this project we will learn to work with Unity, and getting to know C# for the first time. 
