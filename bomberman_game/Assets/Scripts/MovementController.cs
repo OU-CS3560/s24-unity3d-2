@@ -10,31 +10,37 @@ public class MovementController : MonoBehaviour
     public KeyCode inputDown = KeyCode.S;
     public KeyCode inputLeft = KeyCode.A;
     public KeyCode inputRight = KeyCode.D;
+    public SpriteAnimation spriteAniUp;
+    public SpriteAnimation spriteAniDown;
+    public SpriteAnimation spriteAniLeft;
+    public SpriteAnimation spriteAniRight;
+    private SpriteAnimation previousAni;
     private void Awake()
     {
         whiteplayer = GetComponent<Rigidbody2D>();
+        previousAni = spriteAniDown;
     }
     private void Update()
     {
         if (Input.GetKey(inputUp))
         {
-            SetDirection(Vector2.up);
+            SetDirection(Vector2.up, spriteAniUp);
         }
         else if (Input.GetKey(inputDown))
         {
-            SetDirection(Vector2.down);
+            SetDirection(Vector2.down, spriteAniDown);
         }
         else if (Input.GetKey(inputLeft))
         {
-            SetDirection(Vector2.left);
+            SetDirection(Vector2.left, spriteAniLeft);
         }
         else if (Input.GetKey(inputRight))
         {
-            SetDirection(Vector2.right);
+            SetDirection(Vector2.right, spriteAniRight);
         }
         else
         {
-            SetDirection(Vector2.zero);
+            SetDirection(Vector2.zero, previousAni);
         }
     }
 
@@ -44,8 +50,15 @@ public class MovementController : MonoBehaviour
         Vector2 translation = direction * speed * Time.fixedDeltaTime;
         whiteplayer.MovePosition(position+translation);
     }
-    private void SetDirection (Vector2 newDirection)
+    private void SetDirection (Vector2 newDirection, SpriteAnimation spriteAni)
     {
         direction = newDirection;
+        spriteAniUp.enabled = spriteAni == spriteAniUp;
+        spriteAniDown.enabled = spriteAni == spriteAniDown;
+        spriteAniLeft.enabled = spriteAni == spriteAniLeft;
+        spriteAniRight.enabled = spriteAni == spriteAniRight;
+
+        previousAni = spriteAni;
+        previousAni.idle = direction == Vector2.zero;
     }
 }
