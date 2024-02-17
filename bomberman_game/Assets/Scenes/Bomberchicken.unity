@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 52986774}
   - component: {fileID: 52986773}
   - component: {fileID: 52986772}
+  - component: {fileID: 52986776}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -241,6 +242,22 @@ Transform:
   - {fileID: 438037614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52986776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52986771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1835a5d91d18acd49b7b89318cd10a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombasset: {fileID: 2527228653179709873, guid: b6318bd61c29e3449850b28b0d93c8b7, type: 3}
+  bombplacedkey: 32
+  bombexplodedtime: 4
+  bombshad: 1
 --- !u!1 &270822543
 GameObject:
   m_ObjectHideFlags: 0
