@@ -258,10 +258,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1835a5d91d18acd49b7b89318cd10a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombasset: {fileID: 2527228653179709873, guid: b6318bd61c29e3449850b28b0d93c8b7, type: 3}
-  bombplacedkey: 32
-  bombexplodedtime: 1
-  bombshad: 1
+  bomb_asset: {fileID: 2527228653179709873, guid: b6318bd61c29e3449850b28b0d93c8b7, type: 3}
+  bomb_place_key: 32
+  bomb_explode_time: 4
+  bombs_had: 1
+  prefab_explosion: {fileID: 2179984460235843058, guid: 75ae859093ae38440bd3adc21d4521f6, type: 3}
+  explosion_time: 1
+  explosion_radius: 1
+  explosion_layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &233275158
 GameObject:
   m_ObjectHideFlags: 0
