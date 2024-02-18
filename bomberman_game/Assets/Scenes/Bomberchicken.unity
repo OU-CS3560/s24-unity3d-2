@@ -262,12 +262,60 @@ MonoBehaviour:
   bomb_place_key: 32
   bomb_explode_time: 4
   bombs_had: 1
-  prefab_explosion: {fileID: 0}
+  prefab_explosion: {fileID: 2179984460235843058, guid: 75ae859093ae38440bd3adc21d4521f6, type: 3}
   explosion_time: 1
   explosion_radius: 1
   explosion_layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+--- !u!1 &233275158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233275160}
+  - component: {fileID: 233275159}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233275159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233275158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7442f9a0bbdc4e8498509f4cbedc7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreepPrefab: {fileID: 5023671734604046586, guid: 85f6d88e64fab43e2b8da8a2e915b87c, type: 3}
+  player: {fileID: 52986771}
+  width: 10
+  height: 4
+--- !u!4 &233275160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233275158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270822543
 GameObject:
   m_ObjectHideFlags: 0
