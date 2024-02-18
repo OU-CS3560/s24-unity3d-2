@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52986773}
   - component: {fileID: 52986772}
   - component: {fileID: 52986776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,10 +258,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1835a5d91d18acd49b7b89318cd10a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombasset: {fileID: 2527228653179709873, guid: b6318bd61c29e3449850b28b0d93c8b7, type: 3}
-  bombplacedkey: 32
-  bombexplodedtime: 1
-  bombshad: 1
+  bomb_asset: {fileID: 2527228653179709873, guid: b6318bd61c29e3449850b28b0d93c8b7, type: 3}
+  bomb_place_key: 32
+  bomb_explode_time: 2
+  bombs_had: 1
+  prefab_explosion: {fileID: 2179984460235843058, guid: 75ae859093ae38440bd3adc21d4521f6, type: 3}
+  explosion_time: 1
+  explosion_radius: 3
+  explosion_layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &270822543
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +279,7 @@ GameObject:
   - component: {fileID: 270822544}
   - component: {fileID: 270822545}
   - component: {fileID: 270822546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +308,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270822543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -354,7 +360,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270822543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
@@ -378,7 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379602916}
   - component: {fileID: 379602915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +430,7 @@ GameObject:
   - component: {fileID: 438037614}
   - component: {fileID: 438037615}
   - component: {fileID: 438037616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +459,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438037613}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -505,7 +511,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438037613}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
@@ -622,7 +628,7 @@ GameObject:
   - component: {fileID: 559712176}
   - component: {fileID: 559712177}
   - component: {fileID: 559712178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +734,7 @@ GameObject:
   - component: {fileID: 1714404365}
   - component: {fileID: 1714404366}
   - component: {fileID: 1714404367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,7 +763,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714404364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -809,7 +815,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714404364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
@@ -835,7 +841,7 @@ GameObject:
   - component: {fileID: 1999742542}
   - component: {fileID: 1999742541}
   - component: {fileID: 1999742543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Solid Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
