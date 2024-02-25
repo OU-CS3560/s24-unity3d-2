@@ -17,6 +17,11 @@ public class Bomb : MonoBehaviour
     public float explosion_time = 1f;
     public int explosion_radius = 1;
     public LayerMask explosion_layer;
+
+    [Header("Break Block")]
+    public DestroyBlock break_prefab;
+    public Tilemap breakable_tile;
+    
     private void OnEnable()
     {
         bombs_remaining = bombs_had;
@@ -68,6 +73,7 @@ public class Bomb : MonoBehaviour
 
         if (Physics2D.OverlapBox(position, Vector2.one/2f, 0f, explosion_layer))
         {
+            ClearBlock(position);
             return;
         }
 
@@ -91,6 +97,18 @@ public class Bomb : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Bomb"))
         {
             other.isTrigger = false;
+        }
+    }
+
+    private void ClearBlock(Vector2 position)
+    {
+        Vector3Int cell = breakable_tile.WorldToCell(position);
+        TileBase tile = breakable_tile.GetTile(cell);
+
+        if(tile != null)
+        {
+            Instantiate(break_prefab, position, Quaternion.identity);
+            breakable_tile.SetTile(cell, null);
         }
     }
 
