@@ -17,7 +17,8 @@ public class EnemySpawner : MonoBehaviour
             for (int x = 0; x < width; x += 2)
             {
                 curCreep = Instantiate(CreepPrefab, new Vector3(x, y, 0), Quaternion.identity);
-                curCreep.GetComponent<EnemyMovement>().player = this.player; 
+                curCreep.GetComponent<EnemyMovement>().player = this.player;
+                curCreep.GetComponent<Pathfinding.AIDestinationSetter>().target = this.player.transform;
             }
         }
     }
