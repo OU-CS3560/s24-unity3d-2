@@ -14,6 +14,7 @@ public class MovementController : MonoBehaviour
     public SpriteAnimation spriteAniDown;
     public SpriteAnimation spriteAniLeft;
     public SpriteAnimation spriteAniRight;
+    public SpriteAnimation spriteAniDeath;
     private SpriteAnimation previousAni;
     private void Awake()
     {
@@ -60,5 +61,44 @@ public class MovementController : MonoBehaviour
 
         previousAni = spriteAni;
         previousAni.idle = direction == Vector2.zero;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Boom"))
+        {
+            Death();
+        }
+    }
+    
+    private void Death()
+    {
+        enabled = false;
+        GetComponent<Bomb>().enabled = false;
+        spriteAniUp.enabled = false;
+        spriteAniDown.enabled = false;
+        spriteAniLeft.enabled=false;
+        spriteAniRight.enabled=false;
+        spriteAniDeath.enabled = true;
+
+        Invoke(nameof(Afterdying), 1.25f);
+    }
+
+    private void Afterdying()
+    {
+        Vector2 respawnPosition = new(-7.0f, 5.5f);
+
+        whiteplayer.position = respawnPosition;
+
+        enabled = true;
+        GetComponent<Bomb>().enabled = true;
+        spriteAniUp.enabled = true;
+        spriteAniDown.enabled = true;
+        spriteAniLeft.enabled = true;
+        spriteAniRight.enabled = true;
+
+        spriteAniDeath.enabled = false;
+
+        SetDirection(Vector2.down, spriteAniDown);
     }
 }
