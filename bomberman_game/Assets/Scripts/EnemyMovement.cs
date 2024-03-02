@@ -26,4 +26,22 @@ public class EnemyMovement : MonoBehaviour
         this.transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed);
         this.transform.rotation = Quaternion.Euler(Vector3.forward * angle); // Vector3.forward is shorthard for writing Vector3(0, 0, 1).
     }*/
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Boom"))
+        {
+            Death();
+        }
+    }
+    private void Death()
+    {
+        enabled = false;
+
+        Invoke(nameof(Afterdying), 0.25f);
+    }
+
+    private void Afterdying()
+    {
+        gameObject.SetActive(false);
+    }
 }
