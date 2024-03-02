@@ -21,7 +21,11 @@ public class Bomb : MonoBehaviour
     [Header("Break Block")]
     public DestroyBlock break_prefab;
     public Tilemap breakable_tile;
-    
+
+    [Header("Pathfinder object")]   // helps update the pathfinding when a block is destroyed
+    public GameObject PF_object;
+
+
     private void OnEnable()
     {
         bombs_remaining = bombs_had;
@@ -107,8 +111,12 @@ public class Bomb : MonoBehaviour
 
         if(tile != null)
         {
-            Instantiate(break_prefab, position, Quaternion.identity);
+            DestroyBlock break_instance = Instantiate(break_prefab, position, Quaternion.identity);
+            break_instance.GetComponent<DestroyBlock>().PF_object = this.PF_object;
+
             breakable_tile.SetTile(cell, null);
+            new WaitForSeconds(1);
+            PF_object.GetComponent<AstarPath>().Scan();
         }
     }
 

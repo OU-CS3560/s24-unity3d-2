@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3551062214050121782}
   - component: {fileID: 8016145364228343919}
   - component: {fileID: 7483934113109625467}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DestroyBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
