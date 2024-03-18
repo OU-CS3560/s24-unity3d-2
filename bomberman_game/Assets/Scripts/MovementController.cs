@@ -76,6 +76,7 @@ public class MovementController : MonoBehaviour
         {
             // Player collides with an enemy
             Death();
+            collision.gameObject.GetComponent<EnemyMovement>().Death();
         }
     }
 

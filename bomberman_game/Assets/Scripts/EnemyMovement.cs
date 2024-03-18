@@ -32,12 +32,8 @@ public class EnemyMovement : MonoBehaviour
         {
             Death();
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
-        {
-            Death();
-        }
     }
-    private void Death()
+    public void Death()
     {
         enabled = false;
 
