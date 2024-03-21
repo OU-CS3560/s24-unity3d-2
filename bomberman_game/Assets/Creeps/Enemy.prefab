@@ -151,7 +151,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.03, y: -0.5}
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.25
 --- !u!114 &5150037810430323468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 0.6
+  radius: 0.5
   height: 0.05
   canMove: 1
   maxSpeed: 3
