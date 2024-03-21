@@ -80,7 +80,7 @@ public class MovementController : MonoBehaviour
             collision.gameObject.GetComponent<EnemyMovement>().Death();
         }
     }
-
+    
 
     private void Death()
     {
