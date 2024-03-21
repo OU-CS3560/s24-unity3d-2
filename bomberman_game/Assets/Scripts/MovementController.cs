@@ -63,6 +63,8 @@ public class MovementController : MonoBehaviour
         previousAni.idle = direction == Vector2.zero;
     }
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Boom"))

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52986773}
   - component: {fileID: 52986772}
   - component: {fileID: 52986776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 270822544}
   - component: {fileID: 270822545}
   - component: {fileID: 270822546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 438037614}
   - component: {fileID: 438037615}
   - component: {fileID: 438037616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 559712176}
   - component: {fileID: 559712177}
   - component: {fileID: 559712178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 0
+  showGraphs: 1
 --- !u!4 &1254218289
 Transform:
   m_ObjectHideFlags: 0
@@ -1801,7 +1801,7 @@ GameObject:
   - component: {fileID: 1714404365}
   - component: {fileID: 1714404366}
   - component: {fileID: 1714404367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
