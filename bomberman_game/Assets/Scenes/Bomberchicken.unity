@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52986773}
   - component: {fileID: 52986772}
   - component: {fileID: 52986776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ MonoBehaviour:
   explosion_radius: 1
   explosion_layer:
     serializedVersion: 2
-    m_Bits: 1088
+    m_Bits: 640
   break_prefab: {fileID: 7483934113109625467, guid: 153ba6878ee320d418dd4e1f3a2d53ff, type: 3}
   breakable_tile: {fileID: 1217856140}
   PF_object: {fileID: 1254218287}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 270822544}
   - component: {fileID: 270822545}
   - component: {fileID: 270822546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 438037614}
   - component: {fileID: 438037615}
   - component: {fileID: 438037616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,6 +579,74 @@ MonoBehaviour:
   animationTime: 0.15
   loop: 1
   idle: 1
+--- !u!1 &471673075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471673078}
+  - component: {fileID: 471673077}
+  - component: {fileID: 471673076}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &471673076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471673075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &471673077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471673075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &471673078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471673075}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +750,7 @@ GameObject:
   - component: {fileID: 559712176}
   - component: {fileID: 559712177}
   - component: {fileID: 559712178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -897,7 +965,7 @@ GameObject:
   - component: {fileID: 1217856140}
   - component: {fileID: 1217856139}
   - component: {fileID: 1217856141}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: Breakable Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1834,7 @@ GameObject:
   - component: {fileID: 1714404365}
   - component: {fileID: 1714404366}
   - component: {fileID: 1714404367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1941,7 @@ GameObject:
   - component: {fileID: 1999742542}
   - component: {fileID: 1999742541}
   - component: {fileID: 1999742543}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: Solid Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5289,3 +5357,4 @@ SceneRoots:
   - {fileID: 233275160}
   - {fileID: 379602916}
   - {fileID: 52986775}
+  - {fileID: 471673078}
