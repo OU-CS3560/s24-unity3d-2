@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52986773}
   - component: {fileID: 52986772}
   - component: {fileID: 52986776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ MonoBehaviour:
   explosion_radius: 1
   explosion_layer:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 640
   break_prefab: {fileID: 7483934113109625467, guid: 153ba6878ee320d418dd4e1f3a2d53ff, type: 3}
   breakable_tile: {fileID: 1217856140}
 --- !u!1 &233275158
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 270822544}
   - component: {fileID: 270822545}
   - component: {fileID: 270822546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379602916}
   - component: {fileID: 379602915}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 438037614}
   - component: {fileID: 438037615}
   - component: {fileID: 438037616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 559712176}
   - component: {fileID: 559712177}
   - component: {fileID: 559712178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 1217856140}
   - component: {fileID: 1217856139}
   - component: {fileID: 1217856141}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Breakable Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1801,7 @@ GameObject:
   - component: {fileID: 1714404365}
   - component: {fileID: 1714404366}
   - component: {fileID: 1714404367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,7 +1908,7 @@ GameObject:
   - component: {fileID: 1999742542}
   - component: {fileID: 1999742541}
   - component: {fileID: 1999742543}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Solid Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

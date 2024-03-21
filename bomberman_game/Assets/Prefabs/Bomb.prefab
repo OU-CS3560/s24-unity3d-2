@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 447122286156580489}
   - component: {fileID: 6341849839768622573}
   - component: {fileID: 5338508478680688120}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
