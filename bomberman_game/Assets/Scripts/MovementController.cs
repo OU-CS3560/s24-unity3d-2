@@ -73,6 +73,17 @@ public class MovementController : MonoBehaviour
         }
     }
     
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            // Player collides with an enemy
+            Death();
+            collision.gameObject.GetComponent<EnemyMovement>().Death();
+        }
+    }
+
+
     private void Death()
     {
         enabled = false;
