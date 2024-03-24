@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MovementController : MonoBehaviour
 {
-    public Rigidbody2D whiteplayer;
+    public Rigidbody2D player;
     private Vector2 direction = Vector2.down;
     public float speed = 4F;
     public KeyCode inputUp = KeyCode.W;
@@ -15,10 +15,12 @@ public class MovementController : MonoBehaviour
     public SpriteAnimation spriteAniLeft;
     public SpriteAnimation spriteAniRight;
     public SpriteAnimation spriteAniDeath;
+    public float respawn_x = -7.0f;
+    public float respawn_y = 5.5f;
     private SpriteAnimation previousAni;
     private void Awake()
     {
-        whiteplayer = GetComponent<Rigidbody2D>();
+        player = GetComponent<Rigidbody2D>();
         previousAni = spriteAniDown;
     }
     private void Update()
@@ -47,9 +49,9 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 position = whiteplayer.position;
+        Vector2 position = player.position;
         Vector2 translation = direction * speed * Time.fixedDeltaTime;
-        whiteplayer.MovePosition(position+translation);
+        player.MovePosition(position+translation);
     }
     private void SetDirection (Vector2 newDirection, SpriteAnimation spriteAni)
     {
@@ -97,9 +99,9 @@ public class MovementController : MonoBehaviour
 
     private void Afterdying()
     {
-        Vector2 respawnPosition = new(-7.0f, 5.5f);
+        Vector2 respawnPosition = new(respawn_x, respawn_y);
 
-        whiteplayer.position = respawnPosition;
+        player.position = respawnPosition;
 
         enabled = true;
         GetComponent<Bomb>().enabled = true;
@@ -112,4 +114,6 @@ public class MovementController : MonoBehaviour
 
         SetDirection(Vector2.down, spriteAniDown);
     }
+
+
 }

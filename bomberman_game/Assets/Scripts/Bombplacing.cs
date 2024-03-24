@@ -120,4 +120,9 @@ public class Bomb : MonoBehaviour
         }
     }
 
+    public void AddBomb()
+    {
+        bombs_had++;
+        bombs_remaining++;
+    }
 }

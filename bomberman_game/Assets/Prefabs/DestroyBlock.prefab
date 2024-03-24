@@ -168,4 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a441f9a430d2ada4b95affec8b004c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PF_object: {fileID: 0}
   destroy_time: 1
+  ItemSpawnChance: 1
+  powerupsspawn:
+  - {fileID: 4803445026328319889, guid: 96a513d258510884aa4b6a2bbe57ddf7, type: 3}
+  - {fileID: 2910831188673861303, guid: 23e5175878035814bad64e695cb1c4f4, type: 3}
