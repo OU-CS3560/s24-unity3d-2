@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class MovementController : MonoBehaviour
 {
     public Rigidbody2D player;
+    public CircleCollider2D hi;
     private Vector2 direction = Vector2.down;
     public float speed = 4F;
     public KeyCode inputUp = KeyCode.W;
@@ -23,6 +25,7 @@ public class MovementController : MonoBehaviour
     {
         player = GetComponent<Rigidbody2D>();
         previousAni = spriteAniDown;
+        hi = GetComponent<CircleCollider2D>();
     }
     private void Update()
     {
@@ -89,13 +92,16 @@ public class MovementController : MonoBehaviour
 
     private void Death()
     {
+        hi.enabled = false;
         enabled = false;
+        ScoreScript.death++;
         GetComponent<Bomb>().enabled = false;
         spriteAniUp.enabled = false;
         spriteAniDown.enabled = false;
         spriteAniLeft.enabled=false;
         spriteAniRight.enabled=false;
         spriteAniDeath.enabled = true;
+        
 
         Invoke(nameof(Afterdying), 1.25f);
     }
