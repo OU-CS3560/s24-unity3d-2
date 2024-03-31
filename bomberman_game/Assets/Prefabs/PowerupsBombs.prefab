@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4692676299030887830}
   - component: {fileID: 7713177421384361622}
   - component: {fileID: 6284047867571425560}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PowerupsBombs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f38b580118b8924196bb555377d7ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
