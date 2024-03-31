@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3551062214050121782}
   - component: {fileID: 8016145364228343919}
   - component: {fileID: 7483934113109625467}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: DestroyBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   - {fileID: -5070355926835817348, guid: 8482cc10c037d2846a26e45ca1a26d7b, type: 3}
   - {fileID: -5028786312047504514, guid: 8482cc10c037d2846a26e45ca1a26d7b, type: 3}
   animationTime: 0.1666
-  loop: 0
+  loop: 1
   idle: 0
 --- !u!114 &7483934113109625467
 MonoBehaviour:
@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PF_object: {fileID: 0}
-  destroy_time: 0
+  destroy_time: 1
