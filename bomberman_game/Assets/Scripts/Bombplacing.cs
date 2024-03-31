@@ -24,6 +24,7 @@ public class Bomb : MonoBehaviour
 
     [Header("Pathfinder object")]   // helps update the pathfinding when a block is destroyed
     public GameObject PF_object;
+    public bool doScan = false;
 
 
     private void OnEnable()

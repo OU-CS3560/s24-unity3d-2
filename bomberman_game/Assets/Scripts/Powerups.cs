@@ -26,7 +26,11 @@ public class Powerups : MonoBehaviour
                 break;
         }
 
+        var bounds = gameObject.GetComponent<BoxCollider2D>().bounds;
         Destroy(gameObject);
+        var guo = new Pathfinding.GraphUpdateObject(bounds);
+        guo.updatePhysics = true;
+        AstarPath.active.UpdateGraphs(guo);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
