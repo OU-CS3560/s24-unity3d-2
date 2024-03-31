@@ -8,13 +8,13 @@ public class Bomb : MonoBehaviour
     [Header("Bomb Placing")]
     public GameObject bomb_asset;
     public KeyCode bomb_place_key = KeyCode.Space;
-    public float bomb_explode_time = 4f;
+    public float bomb_explode_time = 2f;
     public int bombs_had = 1;
     private int bombs_remaining;
 
     [Header("Explosion")]
     public GoBoom prefab_explosion;
-    public float explosion_time = 1f;
+    public float explosion_time = 0.0f;
     public int explosion_radius = 1;
     public LayerMask explosion_layer;
 
@@ -115,7 +115,7 @@ public class Bomb : MonoBehaviour
             break_instance.GetComponent<DestroyBlock>().PF_object = this.PF_object;
 
             breakable_tile.SetTile(cell, null);
-            new WaitForSeconds(1);
+            //new WaitForSeconds(1);
             PF_object.GetComponent<AstarPath>().Scan();
         }
     }

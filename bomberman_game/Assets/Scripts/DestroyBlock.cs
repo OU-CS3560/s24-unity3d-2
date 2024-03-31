@@ -7,7 +7,7 @@ public class DestroyBlock : MonoBehaviour
     [Header("Pathfinder object")]   // helps update the pathfinding when a block is destroyed
     public GameObject PF_object;
 
-    public float destroy_time = 1f;
+    public float destroy_time = 0.0f;
 
     [Range(0f, 1f)]
     public float ItemSpawnChance = 0.2f;
@@ -15,7 +15,7 @@ public class DestroyBlock : MonoBehaviour
     public GameObject[] powerupsspawn;
     private void Start(){
         Destroy(gameObject, destroy_time);
-        new WaitForSeconds(1);
+        //new WaitForSeconds(1);
         PF_object.GetComponent<AstarPath>().Scan();
     }
 
