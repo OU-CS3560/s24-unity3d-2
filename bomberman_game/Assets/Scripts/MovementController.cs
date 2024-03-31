@@ -15,6 +15,7 @@ public class MovementController : MonoBehaviour
     public SpriteAnimation spriteAniLeft;
     public SpriteAnimation spriteAniRight;
     public SpriteAnimation spriteAniDeath;
+    //Make respawn postion adjustable
     public float respawn_x = -7.0f;
     public float respawn_y = 5.5f;
     private SpriteAnimation previousAni;
