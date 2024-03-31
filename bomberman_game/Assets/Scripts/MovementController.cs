@@ -20,6 +20,7 @@ public class MovementController : MonoBehaviour
     //Make respawn postion adjustable
     public float respawn_x = -7.0f;
     public float respawn_y = 5.5f;
+    public bool shield = false;
     private SpriteAnimation previousAni;
     private void Awake()
     {
@@ -75,7 +76,14 @@ public class MovementController : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Boom"))
         {
-            Death();
+            if (shield)
+            {
+                shield = false;
+            }
+            else{
+                Death();
+            }
+
         }
     }
     

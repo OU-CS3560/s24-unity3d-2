@@ -7,7 +7,7 @@ public class Powerups : MonoBehaviour
         ExtraBombs,
         BlastRadius,
         Bombpush,
-        shield,
+        Shield,
     }
 
     public ItemType type;
@@ -30,6 +30,9 @@ public class Powerups : MonoBehaviour
                 break;
             case ItemType.Bombpush:
                 player.GetComponent<MovementController>().player.mass = 1000000;
+                break;
+            case ItemType.Shield:
+                player.GetComponent<MovementController>().shield = true;
                 break;
         }
 

@@ -169,6 +169,7 @@ MonoBehaviour:
   spriteAniDeath: {fileID: 1019594923}
   respawn_x: -7
   respawn_y: 5.5
+  shield: 0
 --- !u!58 &52986773
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5755,6 +5756,63 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &5328815523598654920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13025649
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751801044467665275, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831277107208443414, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
+      propertyPath: m_Name
+      value: Shield
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88dcf2065c105e14b8485fd7031a110f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5766,3 +5824,4 @@ SceneRoots:
   - {fileID: 52986775}
   - {fileID: 471673078}
   - {fileID: 361496828}
+  - {fileID: 5328815523598654920}
