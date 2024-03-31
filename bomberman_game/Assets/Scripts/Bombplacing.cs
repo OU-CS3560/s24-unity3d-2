@@ -115,8 +115,6 @@ public class Bomb : MonoBehaviour
             break_instance.GetComponent<DestroyBlock>().PF_object = this.PF_object;
 
             breakable_tile.SetTile(cell, null);
-            //new WaitForSeconds(1);
-            PF_object.GetComponent<AstarPath>().Scan();
         }
     }
 
