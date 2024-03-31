@@ -304,6 +304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreepPrefab: {fileID: 5023671734604046586, guid: 85f6d88e64fab43e2b8da8a2e915b87c, type: 3}
   player: {fileID: 52986771}
+  grid_layer:
+    serializedVersion: 2
+    m_Bits: 1024
   width: 10
   height: 4
 --- !u!4 &233275160
@@ -967,7 +970,7 @@ GameObject:
   - component: {fileID: 1217856141}
   m_Layer: 10
   m_Name: Breakable Blocks
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1943,7 +1946,7 @@ GameObject:
   - component: {fileID: 1999742543}
   m_Layer: 10
   m_Name: Solid Blocks
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
