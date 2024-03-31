@@ -1393,10 +1393,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleSprite: {fileID: 864885269507524701, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
   animationSprites:
-  - {fileID: 864885269507524701, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: 2649799354532637081, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: -6180953497746829179, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: -6858737447367745198, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
+  - {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: 1045929891, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: 1712742871, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
   loop: 1
   idle: 1
@@ -2843,10 +2843,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleSprite: {fileID: 3395209463811955822, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
   animationSprites:
-  - {fileID: 3395209463811955822, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: 2460240801060281538, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: -2170469931753066782, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
-  - {fileID: -7454021130407618321, guid: 5a44b023eba74f54893b3d9219669e40, type: 3}
+  - {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: 1068729348, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
+  - {fileID: 1997248711, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
   loop: 1
   idle: 1

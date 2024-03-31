@@ -108,6 +108,7 @@ public class MovementController : MonoBehaviour
 
     private void Afterdying()
     {
+        hi.enabled = true;
         Vector2 respawnPosition = new(respawn_x, respawn_y);
 
         player.position = respawnPosition;
