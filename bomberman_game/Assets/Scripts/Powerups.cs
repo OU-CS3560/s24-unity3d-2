@@ -7,6 +7,7 @@ public class Powerups : MonoBehaviour
         ExtraBombs,
         BlastRadius,
         Bombpush,
+        shield,
     }
 
     public ItemType type;
@@ -16,10 +17,16 @@ public class Powerups : MonoBehaviour
         switch (type)
         {
             case ItemType.ExtraBombs:
-                player.GetComponent<Bomb>().AddBomb();
+                if (player.GetComponent<Bomb>().bombs_had < 4)
+                {
+                    player.GetComponent<Bomb>().AddBomb();
+                }
                 break;
             case ItemType.BlastRadius:
-                player.GetComponent<Bomb>().explosion_radius++;
+                if (player.GetComponent<Bomb>().explosion_radius < 3)
+                {
+                    player.GetComponent<Bomb>().explosion_radius++;
+                }
                 break;
             case ItemType.Bombpush:
                 player.GetComponent<MovementController>().player.mass = 1000000;
