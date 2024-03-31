@@ -92,7 +92,14 @@ public class MovementController : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             // Player collides with an enemy
-            Death();
+            if (shield)
+            {
+                shield = false;
+            }
+            else
+            {
+                Death();
+            }
             collision.gameObject.GetComponent<EnemyMovement>().Death();
         }
     }
@@ -109,7 +116,9 @@ public class MovementController : MonoBehaviour
         spriteAniLeft.enabled=false;
         spriteAniRight.enabled=false;
         spriteAniDeath.enabled = true;
-        
+        player.GetComponent<Bomb>().bombs_had = 1;
+        player.GetComponent<Bomb>().explosion_radius = 1;
+        player.mass = 1;
 
         Invoke(nameof(Afterdying), 1.25f);
     }
