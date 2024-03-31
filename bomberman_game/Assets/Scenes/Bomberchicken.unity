@@ -138,9 +138,6 @@ GameObject:
   - component: {fileID: 52986776}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
-  m_Layer: 3
-  m_Name: White
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1741,6 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  hi: {fileID: 0}
   speed: 4
   inputUp: 273
   inputDown: 274
@@ -1748,7 +1746,7 @@ MonoBehaviour:
   inputRight: 275
   spriteAniUp: {fileID: 699905513}
   spriteAniDown: {fileID: 974578361}
-  spriteAniLeft: {fileID: 305213301}
+  spriteAniLeft: {fileID: 0}
   spriteAniRight: {fileID: 1747015390}
   spriteAniDeath: {fileID: 1009119969}
   respawn_x: 9
@@ -1830,7 +1828,6 @@ Transform:
   m_Children:
   - {fileID: 699905515}
   - {fileID: 974578363}
-  - {fileID: 305213303}
   - {fileID: 1747015392}
   - {fileID: 1009119971}
   m_Father: {fileID: 0}
