@@ -94,7 +94,7 @@ public class MovementController : MonoBehaviour
         ScoreScript.death++;
         GetComponent<Bomb>().enabled = false;
         spriteAniUp.enabled = false;
-        spriteAniDown.enabled = false;
+        spriteAniDown.enabled = false; 
         spriteAniLeft.enabled=false;
         spriteAniRight.enabled=false;
         spriteAniDeath.enabled = true;
