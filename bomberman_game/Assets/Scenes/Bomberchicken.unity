@@ -328,8 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0078631444e29d4c94896ab6cae4ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOver: {fileID: 0}
-  time: 3
+  GameOver: {fileID: 83710396}
+  time: 0.05
   timeRun: 0
   timeText: {fileID: 63211678}
 --- !u!114 &63211678
