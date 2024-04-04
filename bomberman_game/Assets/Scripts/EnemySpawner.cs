@@ -29,6 +29,7 @@ public class EnemySpawner : MonoBehaviour
 
         }*/
         // y is up/down a.k.a row
+        /*
         for (int y = minY; y < maxY; y += 2)
         {
             for (int x = minX; x < maxX; x += 2)
@@ -36,11 +37,10 @@ public class EnemySpawner : MonoBehaviour
                 if (!isBlock(x, y))
                 {
                     curCreep = Instantiate(CreepPrefab, new Vector3(x, y, 0), Quaternion.identity);
-                    curCreep.GetComponent<EnemyMovement>().player = this.player;
                     curCreep.GetComponent<Pathfinding.AIDestinationSetter>().target = this.player.transform;
                 }
             }
-        }
+        }*/
     }
     bool isBlock(int x, int y)
     {
