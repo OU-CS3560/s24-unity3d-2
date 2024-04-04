@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public GameOverScript GameOver;
     public float time = 3f;
     public bool timeRun = false;
     public TMP_Text timeText;
@@ -20,10 +22,14 @@ public class Timer : MonoBehaviour
     {
         if (timeRun)
         {
-            if(time > 2f)
+            if(time > 1.5f)
             {
                 time = time - Time.deltaTime;
                 DisplayTime(time);
+            }
+            else if(time < 1.5f)
+            {
+                GameOver.Setup();
             }
         }
     }
