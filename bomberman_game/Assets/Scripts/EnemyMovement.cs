@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
 
-    [SerializeField] public GameObject player;
+    [SerializeField] public GameObject EnemyPrefab;
     [SerializeField] public float speed = 0.01f;
 
     private float distance;
