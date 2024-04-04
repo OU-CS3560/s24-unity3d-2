@@ -2623,8 +2623,8 @@ MonoBehaviour:
   spriteAniLeft: {fileID: 1903745607}
   spriteAniRight: {fileID: 170061498}
   spriteAniDeath: {fileID: 1163180532}
-  respawn_x: -7
-  respawn_y: 5.5
+  respawn_x: 9
+  respawn_y: -8.5
   shield: 0
 --- !u!58 &1316867094
 CircleCollider2D:
