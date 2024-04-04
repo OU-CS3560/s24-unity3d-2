@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOver: {fileID: 83710396}
-  time: 2
+  time: 0.05
   timeRun: 0
   timeText: {fileID: 63211678}
 --- !u!114 &63211678
