@@ -252,10 +252,10 @@ TextureImporter:
       name: chicken_large_6
       rect:
         serializedVersion: 2
-        x: 297
-        y: 341
-        width: 32
-        height: 40
+        x: 290
+        y: 335
+        width: 45
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: chicken_large_7
       rect:
         serializedVersion: 2
-        x: 345
-        y: 342
-        width: 32
-        height: 40
+        x: 340
+        y: 336
+        width: 44
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: chicken_large_8
       rect:
         serializedVersion: 2
-        x: 393
-        y: 341
-        width: 32
-        height: 40
+        x: 387
+        y: 337
+        width: 42
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,9 +504,9 @@ TextureImporter:
       name: chicken_large_18
       rect:
         serializedVersion: 2
-        x: 289
+        x: 286
         y: 290
-        width: 45
+        width: 48
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -525,9 +525,9 @@ TextureImporter:
       name: chicken_large_19
       rect:
         serializedVersion: 2
-        x: 339
+        x: 336
         y: 290
-        width: 40
+        width: 46
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -546,10 +546,10 @@ TextureImporter:
       name: chicken_large_20
       rect:
         serializedVersion: 2
-        x: 385
-        y: 290
-        width: 42
-        height: 42
+        x: 383
+        y: 288
+        width: 46
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +756,10 @@ TextureImporter:
       name: chicken_large_30
       rect:
         serializedVersion: 2
-        x: 290
-        y: 242
-        width: 45
-        height: 42
+        x: 289
+        y: 239
+        width: 47
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,10 +777,10 @@ TextureImporter:
       name: chicken_large_31
       rect:
         serializedVersion: 2
-        x: 341
-        y: 242
-        width: 40
-        height: 43
+        x: 339
+        y: 240
+        width: 44
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -798,10 +798,10 @@ TextureImporter:
       name: chicken_large_32
       rect:
         serializedVersion: 2
-        x: 389
-        y: 242
-        width: 42
-        height: 42
+        x: 386
+        y: 240
+        width: 46
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1008,10 +1008,10 @@ TextureImporter:
       name: chicken_large_42
       rect:
         serializedVersion: 2
-        x: 296
-        y: 192
-        width: 34
-        height: 44
+        x: 293
+        y: 191
+        width: 39
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1029,10 +1029,10 @@ TextureImporter:
       name: chicken_large_43
       rect:
         serializedVersion: 2
-        x: 344
-        y: 192
-        width: 34
-        height: 46
+        x: 341
+        y: 191
+        width: 40
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1050,10 +1050,10 @@ TextureImporter:
       name: chicken_large_44
       rect:
         serializedVersion: 2
-        x: 392
-        y: 192
-        width: 34
-        height: 45
+        x: 389
+        y: 191
+        width: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
