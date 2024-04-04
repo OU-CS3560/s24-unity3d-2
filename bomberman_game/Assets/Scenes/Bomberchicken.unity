@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOver: {fileID: 0}
-  time: 3
+  time: 0.1
   timeRun: 0
   timeText: {fileID: 63211678}
 --- !u!114 &63211678
@@ -2623,8 +2623,8 @@ MonoBehaviour:
   spriteAniLeft: {fileID: 1903745607}
   spriteAniRight: {fileID: 170061498}
   spriteAniDeath: {fileID: 1163180532}
-  respawn_x: -7
-  respawn_y: 5.5
+  respawn_x: 9
+  respawn_y: -8.5
   shield: 0
 --- !u!58 &1316867094
 CircleCollider2D:
@@ -6456,5 +6456,4 @@ SceneRoots:
   - {fileID: 52986775}
   - {fileID: 471673078}
   - {fileID: 361496828}
-  - {fileID: 2207845892205879499}
   - {fileID: 1316867096}
