@@ -22,11 +22,15 @@ public class MovementController : MonoBehaviour
     public float respawn_y = 5.5f;
     public bool shield = false;
     private SpriteAnimation previousAni;
+    public int deaths;
+
     private void Awake()
     {
         player = GetComponent<Rigidbody2D>();
         previousAni = spriteAniDown;
         hi = GetComponent<CircleCollider2D>();
+
+        deaths = 0;
     }
     private void Update()
     {
@@ -109,7 +113,7 @@ public class MovementController : MonoBehaviour
     {
         hi.enabled = false;
         enabled = false;
-        ScoreScript.death++;
+        deaths++;
         GetComponent<Bomb>().enabled = false;
         spriteAniUp.enabled = false;
         spriteAniDown.enabled = false; 

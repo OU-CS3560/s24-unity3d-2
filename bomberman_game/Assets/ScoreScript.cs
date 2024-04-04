@@ -7,6 +7,8 @@ using TMPro;
 public class ScoreScript : MonoBehaviour
 {
     public static int death = 0;
+    public GameObject player;
+    
     public TextMeshProUGUI score;
 
     // Start is called before the first frame update
@@ -18,6 +20,8 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "Deaths: " + death;
+        MovementController script = player.GetComponent<MovementController>();
+        death = script.deaths;
+        score.text = "Score: " + death;
     }
 }
