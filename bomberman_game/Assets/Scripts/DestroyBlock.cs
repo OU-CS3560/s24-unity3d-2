@@ -15,8 +15,6 @@ public class DestroyBlock : MonoBehaviour
     public GameObject[] powerupsspawn;
     private void Start(){
         Destroy(gameObject, destroy_time);
-        //new WaitForSeconds(1);
-        PF_object.GetComponent<AstarPath>().Scan();
     }
 
     private void OnDestroy()

@@ -6,6 +6,8 @@ public class Powerups : MonoBehaviour
     {
         ExtraBombs,
         BlastRadius,
+        Bombpush,
+        Shield
     }
 
     public ItemType type;
@@ -20,9 +22,19 @@ public class Powerups : MonoBehaviour
             case ItemType.BlastRadius:
                 player.GetComponent<Bomb>().explosion_radius++;
                 break;
+            case ItemType.Bombpush:
+                player.GetComponent<MovementController>().player.mass = 1000000;
+                break;
+            case ItemType.Shield:
+                player.GetComponent<MovementController>().shield = true;
+                break;
         }
 
+        var bounds = gameObject.GetComponent<BoxCollider2D>().bounds;
         Destroy(gameObject);
+        var guo = new Pathfinding.GraphUpdateObject(bounds);
+        guo.updatePhysics = true;
+        AstarPath.active.UpdateGraphs(guo);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
