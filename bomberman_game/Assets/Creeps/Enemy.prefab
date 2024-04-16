@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &3000768087528681334
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -149,9 +149,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.5}
+  m_Offset: {x: -0.03, y: 0}
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.4
 --- !u!114 &5150037810430323468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 0.5
+  radius: 0.4
   height: 0.05
   canMove: 1
   maxSpeed: 3
@@ -248,5 +248,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d06d20befee14c52b634f0e98583a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5023671734604046586}
+  EnemyPrefab: {fileID: 0}
   speed: 0.01

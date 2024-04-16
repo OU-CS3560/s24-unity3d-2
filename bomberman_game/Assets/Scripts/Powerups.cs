@@ -70,7 +70,7 @@ public class Powerups : MonoBehaviour
         {
             this.other_player = GameObject.FindGameObjectWithTag("Player");
             this.x = 9f;
-            this.y = 4.95f;
+            this.y = 5.2f;
             OnItemPickUp(other.gameObject);
         }
     }

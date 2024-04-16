@@ -314,7 +314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60, y: 510}
+  m_AnchoredPosition: {x: 60, y: 762}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63211677
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 2560, y: 1600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1280,7 +1280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 670, y: -200}
+  m_AnchoredPosition: {x: 979, y: -200}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543374118
@@ -1684,7 +1684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 720, y: 54}
+  m_AnchoredPosition: {x: 1059, y: 54}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679042683
@@ -1757,7 +1757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: -200}
+  m_AnchoredPosition: {x: -1124, y: -200}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789847820
@@ -3733,7 +3733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+smqmZxdgIAAC8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMFy2jAQ/RVG55KRDYS4t5YQ0kMSJqSTiy/CWmMNsuSR5ADJ8O9dyTZ26ZQL8tt9q31v1/4iQtkKMqfNygj+pDmQ7yPiz+TbqA8+wpHttNqIT+hy3gV3hU9iIeeVOaERjzzN6hKcEdkPtZM+mSJYK5FrUy75DhbaOotwzqQFDBntPFsh9DUiR/wbJ55ywlM896dPPCV0dMZjBsqBGaRGNwmdT6Z3t5PlmN62tHF8M038L75r6eNZoNcqk6ysgHstfZXJvCVGdyFNoco2wyvKtJTCti0Sd6qCBZuqAAPeAy4YKg5t0ZtkhkgBYlc4L2BIf8lzC651xLDTvTDoXVOX/NSNoSWz+6azDybr0AKNp6GtpurTPwnjKIRzo8vH7uKI+ktcIbL9KztlzLqB5UP4vm8+Cg4dmNyzrYT3AtSzXhldK45BZ2pPrS3E9/3jRduigGzf402rV2Bd9ZZ3E+7m6zWcg/zjQopyG7ycNsBG6mB5WAswOJxf2HBYGtuWQNR38dvCG9sNt6sNPAhjHYZalcq3t9W18alkGTzzamq30EaBGVaoQDHpTmus466HeBX7P+uB+Repvb2Nde/HFSXAfT6lV6G1PlymZQt9eAJbvNROCgW91T7wjEYttFLNjg0ldbRNbXKWDWi7WvC/d4vQOeWQMJhRmmy383jM4hmfsG0E0zy+zSc5CcsnFOpkct002tqDY1N9cYWL1n1fRivDqrDv3LDDSnyW2vaZQuV6kxkA9dJUuDQOBi/BN5MvuUCDNuCcUGHg5CslUmd74OmlUBqULo/OsLSvkpJKfGjnkZQswgclJR6+LPPawIeAg7+8K3Ym5z9QSwMEFAAACAgAAJif67VrlERtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKBuUFKqmViqqmBgWVSkrmRbqKRaYpxYpJhqkmakVmacZpSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif6yaqZnF2AgAALwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif67VrlERtAAAAeAAAAAkAJAAAAAAAAAAAAAAAwwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB7AwAAAAA=
+    dataString: UEsDBBQAAAgIAACYn+tlbMBwdgIAAC8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMFy2jAQ/RVG55KRDQlxby0Q0kMSJqSTiy/CWmMNsuSR5ADJ8O/VyjZ26ZQL8u6+1Xtv1/4iQtkKMqfNygj+pDmQ7yOCZ/Jt1Ccf4ch2Wm3EJ3Q174K7AotYqHllTmgfjxBmdQnOiOyH2kkspj5YK5FrUy75DubaOuvDOZMWfMpoh2jlQ18jcvR/4wQhJ3+KZ3j69KeEjs7+mIFyYAal0U1CZ5Pp/d1kOaZ3LWwc30wT/MX3LXx8G+C1yiQrK+Cope8ymbXA6D6UKa+yrUBFmZZS2JYicacqWLCpCjCAHnDBvOJAi94kSKIAsSscChjCX/LcgmsdMey0EMZ71/QlP3VjaMnsvmH2wWQdKNB4Gmg1XZ/+KRhHIZ0bXT52F0cUL3GFyPav7JQx6waWD8OLnnwUHDowuWdbCe8FqGe9MrpW3CedqRFaW4gX/eNF27yAbN/HG6pXwbrqLe8m3M0XNZyD/ONcinIbvJw2gY3UwfKwFmD8cH55wmFpbNvCR5HFbwtvbDfcrjbxIIx1PtWqVEhvq2uDpWQZPEM1tZtro8AMO1SgmHSnte/jrod4lfs/6oHhi9Te3ua69+MKEsJ9PaVXqbU+XKZlC314Alu81E4KBb3VmHj2Rs21Us2ODSV1sE1tcpYNYLta8L93i9AZ5ZAwuKU02W5n8ZjFt3zCthFM8/gun+QkLJ9QXieT64Zoa48fm+qbK79o3fdltDKsCvvODTusxGepbV8pVK43mQFQL02HC3Ew/hL/ZvIlF96gDTgnVBg4+UqJ1NkeeHpplAaly6MzLO27pKQSH9phJCXz8EFJCYYvy7w28CHggJd3zc7k/AdQSwMEFAAACAgAAJif67VrlERtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKBuUFKqmViqqmBgWVSkrmRbqKRaYpxYpJhqkmakVmacZpSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif62VswHB2AgAALwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif67VrlERtAAAAeAAAAAkAJAAAAAAAAAAAAAAAwwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB7AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -4963,7 +4963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -700, y: 55}
+  m_AnchoredPosition: {x: -1024, y: 55}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901438750

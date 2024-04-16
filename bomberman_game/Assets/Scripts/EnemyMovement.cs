@@ -9,23 +9,56 @@ public class EnemyMovement : MonoBehaviour
 
     private float distance;
 
-    /*
+    
     // Update is called once per frame
     void Update()
     {
-        // l2 norm distance between this enemy and the player
-        distance = Vector2.Distance(this.transform.position, player.transform.position);
-        // direction to chase the player
-        Vector2 direction = player.transform.position - this.transform.position;
-        direction.Normalize();
+        // in case the angle of movement is not 90 vertically or horizontally, we move in the closer side of that angle and ignore the other direction
+        Vector2 velocity = gameObject.GetComponent<Rigidbody2D>().velocity;
+        
+        float x = Mathf.Abs(velocity.x);
+        float y = Mathf.Abs(velocity.y);
+        if (x != 0 && y != 0)
+        {
+            if (x < y)
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x, 0);
+            }
+            else
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocity.y);
+            }
+        }
+        velocity = gameObject.GetComponent<Rigidbody2D>().velocity;
 
-        // angle of direction
-        float angle = Mathf.Atan2(direction.y, direction.x);
 
-        // move towards player while rotating in an angle calculated above
-        this.transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed);
-        this.transform.rotation = Quaternion.Euler(Vector3.forward * angle); // Vector3.forward is shorthard for writing Vector3(0, 0, 1).
-    }*/
+        // write your movement animation here
+        // object is moving
+
+        if (velocity != Vector2.zero)
+        {
+            if (velocity.x > 0) // right
+            {
+
+            }
+            else if (velocity.x < 0)    // left
+            {
+
+            }
+            else if (velocity.y > 0)    // up
+            {
+
+            }       
+            else if (velocity.y < 0)    // down
+            {
+
+            }
+        }
+        else    // object is NOT moving, so cancel moving animation here
+        {
+
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Boom"))
