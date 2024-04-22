@@ -11,22 +11,27 @@ public class WinnerScript : MonoBehaviour
 
     public TMP_Text winner;
 
-    void Update()
+    private void Update()
     {
         MovementController score = player.GetComponent<MovementController>();
         MovementController score2 = player2.GetComponent<MovementController>();
 
-        if(score.deaths > score2.deaths)
+        winner.text = who_win(score.deaths, score2.deaths);
+    }
+
+    public string who_win(int score, int score2)
+    {
+        if(score > score2)
         {
-            winner.text = "BLACK CHICKEN WINS!";
+            return "BLACK CHICKEN WINS!";
         }
-        else if(score.deaths < score2.deaths)
+        else if(score < score2)
         {
-            winner.text = "WHITE CHICKEN WINS!";
+            return "WHITE CHICKEN WINS!";
         }
         else
         {
-            winner.text = "TIE!";
+            return "TIE!";
         }
     }
 
