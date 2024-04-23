@@ -55,6 +55,7 @@ public class MovementController : MonoBehaviour
         {
             SetDirection(Vector2.zero, previousAni);
         }
+        
     }
 
     private void FixedUpdate()
@@ -62,6 +63,7 @@ public class MovementController : MonoBehaviour
         Vector2 position = player.position;
         Vector2 translation = direction * speed * Time.fixedDeltaTime;
         player.MovePosition(position+translation);
+        
     }
     private void SetDirection (Vector2 newDirection, SpriteAnimation spriteAni)
     {
