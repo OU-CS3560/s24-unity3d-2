@@ -170,7 +170,7 @@ MonoBehaviour:
   respawn_x: -7
   respawn_y: 5.5
   shield: 0
-  deaths: 3
+  deaths: 0
 --- !u!58 &52986773
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -464,10 +464,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 361496828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -403, y: 212}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -1720, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87406567
 MonoBehaviour:
@@ -1352,10 +1352,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 361496828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 678, y: -114}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447223232
 MonoBehaviour:
@@ -1737,10 +1737,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 361496828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 722, y: 100}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -1720, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543374118
 MonoBehaviour:
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 52986771}
-  score: {fileID: 0}
+  score: {fileID: 543374118}
 --- !u!1 &557852996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,10 +2592,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 361496828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -833, y: 101}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -1720, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789847820
 MonoBehaviour:
@@ -2610,7 +2610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1316867091}
-  score: {fileID: 0}
+  score: {fileID: 789847821}
 --- !u!114 &789847821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3057,10 +3057,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 361496828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -879, y: -114}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &827785708
 MonoBehaviour:
