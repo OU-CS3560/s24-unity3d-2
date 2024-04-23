@@ -8,7 +8,11 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public float speed = 0.01f;
 
     private float distance;
-
+    public SpriteAnimation spriteAniUp;
+    public SpriteAnimation spriteAniDown;
+    public SpriteAnimation spriteAniLeft;
+    public SpriteAnimation spriteAniRight;
+    private SpriteAnimation previousAni;
     
     // Update is called once per frame
     void Update()
@@ -39,24 +43,52 @@ public class EnemyMovement : MonoBehaviour
         {
             if (velocity.x > 0) // right
             {
+                spriteAniUp.enabled = false;
+                spriteAniDown.enabled = false;
+                spriteAniLeft.enabled = false;
+                spriteAniRight.enabled = true;
+                previousAni.idle = false;
 
+                previousAni = spriteAniRight;
             }
             else if (velocity.x < 0)    // left
             {
+                spriteAniUp.enabled = false;
+                spriteAniDown.enabled = false;
+                spriteAniLeft.enabled = true;
+                spriteAniRight.enabled = false;
+                previousAni.idle = false;
 
+                previousAni = spriteAniLeft;
             }
             else if (velocity.y > 0)    // up
             {
+                spriteAniUp.enabled = true;
+                spriteAniDown.enabled = false;
+                spriteAniLeft.enabled = false;
+                spriteAniRight.enabled = false;
+                previousAni.idle = false;
 
+                previousAni = spriteAniUp;
             }       
             else if (velocity.y < 0)    // down
             {
+                spriteAniUp.enabled = false;
+                spriteAniDown.enabled = true;
+                spriteAniLeft.enabled = false;
+                spriteAniRight.enabled = false;
+                previousAni.idle = false;
 
+                previousAni = spriteAniDown;
             }
         }
         else    // object is NOT moving, so cancel moving animation here
         {
-
+            //previousAni.idle = true;
+            spriteAniUp.enabled = false;
+            spriteAniDown.enabled = false;
+            spriteAniLeft.enabled = false;
+            spriteAniRight.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
