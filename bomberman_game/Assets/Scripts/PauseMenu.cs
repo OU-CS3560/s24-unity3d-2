@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     public static bool GameIsPause = false;
 
+    public AudioSource GameMusic;
+
     public GameObject pauseMenuUI;
 
     // Update is called once per frame
@@ -31,12 +33,14 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPause = false;
+        GameMusic.UnPause();
     }
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         GameIsPause = true;
+        GameMusic.Pause();
     } 
     public void LoadMenu()
     {
