@@ -27,7 +27,7 @@ public class Powerups : MonoBehaviour
         
     }
 
-    private void OnItemPickUp(GameObject player_collided)
+    public void OnItemPickUp(GameObject player_collided)
     {
         switch (type)
         {
@@ -50,15 +50,23 @@ public class Powerups : MonoBehaviour
         }
 
 
-        var bounds = gameObject.GetComponent<BoxCollider2D>().bounds;
-        Destroy(gameObject);
-        var guo = new Pathfinding.GraphUpdateObject(bounds);
-        guo.updatePhysics = true;
-        AstarPath.active.UpdateGraphs(guo);
-
         
-        this.enemy = Instantiate(EnemyPrefab, new Vector3(x, y, 0), Quaternion.identity);
-        this.enemy.GetComponent<Pathfinding.AIDestinationSetter>().target = this.other_player.transform;
+
+        if (EnemyPrefab!=null)
+        {
+            var bounds = gameObject.GetComponent<BoxCollider2D>().bounds;
+            Destroy(gameObject);
+            var guo = new Pathfinding.GraphUpdateObject(bounds);
+            guo.updatePhysics = true;
+            AstarPath.active.UpdateGraphs(guo);
+            this.enemy = Instantiate(EnemyPrefab, new Vector3(x, y, 0), Quaternion.identity);
+            this.enemy.GetComponent<Pathfinding.AIDestinationSetter>().target = this.other_player.transform;
+        }
+        else
+        {
+            Debug.LogWarning("EnemyPrefab is null. Cannot instantiate.");
+        }
+
         //Invoke("SpawnEnemyAfterPickUp", 1.0f);
     }
 
