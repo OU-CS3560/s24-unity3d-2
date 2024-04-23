@@ -10,7 +10,7 @@ public class Bomb : MonoBehaviour
     public KeyCode bomb_place_key = KeyCode.Space;
     public float bomb_explode_time = 2f;
     public int bombs_had = 1;
-    private int bombs_remaining;
+    public int bombs_remaining;
 
     [Header("Explosion")]
     public GoBoom prefab_explosion;
@@ -25,6 +25,9 @@ public class Bomb : MonoBehaviour
     [Header("Pathfinder object")]   // helps update the pathfinding when a block is destroyed
     public GameObject PF_object;
     public bool doScan = false;
+
+    [Header("Sound")]
+    public AudioSource explosionSound;
 
 
     private void OnEnable()
@@ -47,15 +50,19 @@ public class Bomb : MonoBehaviour
         position.y = Mathf.Round(position.y);
 
         GameObject bomb = Instantiate(bomb_asset,position,Quaternion.identity);
+
         bombs_remaining--;
 
-        yield return new WaitForSeconds(bomb_explode_time);
+        yield return new WaitForSeconds(bomb_explode_time-0.4f);
 
         position = bomb.transform.position;
         position.x = Mathf.Round(position.x);
         position.y = Mathf.Round(position.y);
 
+        explosionSound.Play();
+        yield return new WaitForSeconds(0.4f);
         GoBoom boom = Instantiate(prefab_explosion,position,Quaternion.identity);
+        
         boom.Set_active_renderer(boom.start);
         boom.Destroy_After(explosion_time);
 

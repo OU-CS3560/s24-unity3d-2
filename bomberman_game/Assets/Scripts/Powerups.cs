@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Powerups : MonoBehaviour
@@ -31,10 +32,14 @@ public class Powerups : MonoBehaviour
         switch (type)
         {
             case ItemType.ExtraBombs:
+                if(player_collided.GetComponent<Bomb>().bombs_had<4)
                 player_collided.GetComponent<Bomb>().AddBomb();
                 break;
             case ItemType.BlastRadius:
-                player_collided.GetComponent<Bomb>().explosion_radius++;
+                if (player_collided.GetComponent<Bomb>().explosion_radius < 4)
+                {
+                    player_collided.GetComponent<Bomb>().explosion_radius++;
+                }
                 break;
             case ItemType.Bombpush:
                 player_collided.GetComponent<MovementController>().player.mass = 1000000;
