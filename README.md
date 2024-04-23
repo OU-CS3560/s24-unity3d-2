@@ -27,6 +27,5 @@ VS Code
 Unity
 
 ## How to build/compile
-
-Describe how to build/compile this project. Is there any dependency or build system that must be installed before hand?
-What OS must be used to build this project? Etc.
+Unity provide has built in option to build the game. 
+It also auto adapt for windowsm linux and mac
