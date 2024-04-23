@@ -10,7 +10,7 @@ public class Bomb : MonoBehaviour
     public KeyCode bomb_place_key = KeyCode.Space;
     public float bomb_explode_time = 2f;
     public int bombs_had = 1;
-    private int bombs_remaining;
+    public int bombs_remaining;
 
     [Header("Explosion")]
     public GoBoom prefab_explosion;

@@ -24,6 +24,7 @@ public class MovementController : MonoBehaviour
     private SpriteAnimation previousAni;
     public int deaths;
 
+
     private void Awake()
     {
         player = GetComponent<Rigidbody2D>();
