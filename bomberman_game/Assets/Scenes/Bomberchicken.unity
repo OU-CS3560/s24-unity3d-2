@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &52986772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +157,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   hi: {fileID: 0}
-  direction: {x: 0, y: -1}
   speed: 4
   inputUp: 119
   inputDown: 115
@@ -171,7 +170,6 @@ MonoBehaviour:
   respawn_x: -7
   respawn_y: 5.5
   shield: 0
-  previousAni: {fileID: 0}
   deaths: 3
 --- !u!58 &52986773
 CircleCollider2D:
@@ -276,6 +274,7 @@ MonoBehaviour:
   explosion_time: 1
   explosion_radius: 1
   explosion_layer:
+    serializedVersion: 2
     m_Bits: 1664
   break_prefab: {fileID: 7483934113109625467, guid: 153ba6878ee320d418dd4e1f3a2d53ff, type: 3}
   breakable_tile: {fileID: 1217856140}
@@ -294,12 +293,12 @@ GameObject:
   - component: {fileID: 63211678}
   - component: {fileID: 63211677}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &63211676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLACE
+  m_text: 2:30
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -432,6 +431,159 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63211675}
   m_CullTransparentMesh: 1
+--- !u!1 &87406565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 87406566}
+  - component: {fileID: 87406568}
+  - component: {fileID: 87406567}
+  - component: {fileID: 87406569}
+  m_Layer: 5
+  m_Name: Countdown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &87406566
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87406565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361496828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -403, y: 212}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &87406567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87406565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 3
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 300
+  m_fontSizeBase: 300
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -854.991, w: -327.81934}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &87406568
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87406565}
+  m_CullTransparentMesh: 1
+--- !u!114 &87406569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87406565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79fdb2d4dae5cb48a25bf58373dcd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+  Ctext: {fileID: 87406567}
+  player1: {fileID: 52986771}
+  player2: {fileID: 1316867091}
+  timer: {fileID: 63211675}
+  screen: {fileID: 1760609223}
 --- !u!1 &170061497
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: 1517036085, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: 1517036085, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -470,7 +621,6 @@ MonoBehaviour:
   - {fileID: 1517036085, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: -609209233, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!212 &170061499
@@ -647,11 +797,10 @@ MonoBehaviour:
   CreepPrefab: {fileID: 5023671734604046586, guid: 85f6d88e64fab43e2b8da8a2e915b87c, type: 3}
   player: {fileID: 52986771}
   grid_layer:
+    serializedVersion: 2
     m_Bits: 1024
-  curCreep: {fileID: 0}
   width: 10
   height: 4
-  blocks: []
 --- !u!4 &233275160
 Transform:
   m_ObjectHideFlags: 0
@@ -764,7 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: 199180309, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: 199180309, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -772,7 +920,6 @@ MonoBehaviour:
   - {fileID: 199180309, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: 1923106837, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!1 &347868457
@@ -962,7 +1109,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1012,6 +1159,8 @@ RectTransform:
   - {fileID: 789847819}
   - {fileID: 447223231}
   - {fileID: 827785707}
+  - {fileID: 1760609224}
+  - {fileID: 87406566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1162,7 +1311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -302518608, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -302518608, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -1170,7 +1318,6 @@ MonoBehaviour:
   - {fileID: -302518608, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: -1003087908, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!1 &447223230
@@ -1953,7 +2100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -1961,7 +2107,6 @@ MonoBehaviour:
   - {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: 1712742871, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!1 &564159392
@@ -2211,8 +2356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollspeed: 1.3333
-  offset: 0
-  mat: {fileID: 0}
 --- !u!1 &685178976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,7 +2838,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2806,7 +2949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -21936013, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -21936013, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -2814,7 +2956,6 @@ MonoBehaviour:
   - {fileID: -21936013, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: -501626333, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!212 &826162630
@@ -3440,7 +3581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -1729314121, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -3448,7 +3588,6 @@ MonoBehaviour:
   - {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: 199180309, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.1333
-  animationFrame: 0
   loop: 1
   idle: 0
 --- !u!212 &1019594924
@@ -3816,7 +3955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -344969101, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -344969101, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -3824,7 +3962,6 @@ MonoBehaviour:
   - {fileID: -21936013, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: -426548039, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.13333
-  animationFrame: 0
   loop: 1
   idle: 0
 --- !u!212 &1163180533
@@ -5234,7 +5371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1316867092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5256,6 +5393,7 @@ MonoBehaviour:
   explosion_time: 1
   explosion_radius: 1
   explosion_layer:
+    serializedVersion: 2
     m_Bits: 1664
   break_prefab: {fileID: 7483934113109625467, guid: 153ba6878ee320d418dd4e1f3a2d53ff, type: 3}
   breakable_tile: {fileID: 1217856140}
@@ -5275,7 +5413,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   hi: {fileID: 0}
-  direction: {x: 0, y: -1}
   speed: 4
   inputUp: 273
   inputDown: 274
@@ -5289,7 +5426,6 @@ MonoBehaviour:
   respawn_x: 9
   respawn_y: -8.5
   shield: 0
-  previousAni: {fileID: 0}
   deaths: 0
 --- !u!58 &1316867094
 CircleCollider2D:
@@ -5612,7 +5748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -344969101, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -344969101, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -5620,7 +5755,6 @@ MonoBehaviour:
   - {fileID: -344969101, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: -992353540, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!212 &1371905328
@@ -6070,7 +6204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -6078,9 +6211,83 @@ MonoBehaviour:
   - {fileID: 1812007999, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: 1997248711, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
+--- !u!1 &1760609223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760609224}
+  - component: {fileID: 1760609226}
+  - component: {fileID: 1760609225}
+  m_Layer: 5
+  m_Name: Countdown Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1760609224
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760609223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361496828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1760609225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760609223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.65882355}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1760609226
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760609223}
+  m_CullTransparentMesh: 1
 --- !u!1 &1847429285
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,7 +6567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3c18a6ee1e64a4c9b7caba28f08fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   idleSprite: {fileID: -426548039, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationSprites:
   - {fileID: -426548039, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
@@ -6368,7 +6574,6 @@ MonoBehaviour:
   - {fileID: -426548039, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   - {fileID: 1291649545, guid: 66c2931ff4d3e4e4a9b28af86f07dddd, type: 3}
   animationTime: 0.15
-  animationFrame: 0
   loop: 1
   idle: 1
 --- !u!212 &1903745608
