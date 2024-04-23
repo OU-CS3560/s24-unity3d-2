@@ -23,7 +23,7 @@ public class MovementController : MonoBehaviour
     public bool shield = false;
     private SpriteAnimation previousAni;
     public int deaths;
-    public AudioSource movingsound;
+
 
     private void Awake()
     {
@@ -38,22 +38,18 @@ public class MovementController : MonoBehaviour
         if (Input.GetKey(inputUp))
         {
             SetDirection(Vector2.up, spriteAniUp);
-            PlayMovingSound();
         }
         else if (Input.GetKey(inputDown))
         {
             SetDirection(Vector2.down, spriteAniDown);
-            PlayMovingSound();
         }
         else if (Input.GetKey(inputLeft))
         {
             SetDirection(Vector2.left, spriteAniLeft);
-            PlayMovingSound();
         }
         else if (Input.GetKey(inputRight))
         {
             SetDirection(Vector2.right, spriteAniRight);
-            PlayMovingSound();
         }
         else
         {
@@ -151,14 +147,6 @@ public class MovementController : MonoBehaviour
         spriteAniDeath.enabled = false;
 
         SetDirection(Vector2.down, spriteAniDown);
-    }
-
-    private void PlayMovingSound()
-    {
-        if (!movingsound.isPlaying)
-        {
-            movingsound.Play();
-        }
     }
 
 
