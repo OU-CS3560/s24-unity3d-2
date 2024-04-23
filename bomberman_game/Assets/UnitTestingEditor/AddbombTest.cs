@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class AddbombTest
+public class PowerUpsTest
 {
     // A Test behaves as an ordinary method
     [Test]
