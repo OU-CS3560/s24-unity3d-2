@@ -19,6 +19,10 @@ public class WinnerScript : MonoBehaviour
         winner.text = who_win(score.deaths, score2.deaths);
     }
 
+    /// \brief A function that compares two players' scores and determines the winner
+    /// @param[in] score the score of the black chicken
+    /// @param[in] score2 the score of the white chicken
+    /// \return string that reveals the winner.
     public string who_win(int score, int score2)
     {
         if(score > score2)

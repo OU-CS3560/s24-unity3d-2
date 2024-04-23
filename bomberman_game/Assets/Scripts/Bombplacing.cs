@@ -126,6 +126,9 @@ public class Bomb : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// \brief Increase the amount of bombs the player has by 1. 
+    /// </summary>
     public void AddBomb()
     {
         bombs_had++;

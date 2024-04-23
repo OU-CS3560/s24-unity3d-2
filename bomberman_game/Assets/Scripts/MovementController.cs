@@ -58,6 +58,10 @@ public class MovementController : MonoBehaviour
         
     }
 
+    ///  
+    ///  \brief calculate the new position of the player after the player pressed a key.
+    ///  \return **void**
+    
     private void FixedUpdate()
     {
         Vector2 position = player.position;

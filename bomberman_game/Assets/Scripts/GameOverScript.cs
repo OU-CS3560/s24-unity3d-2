@@ -9,6 +9,8 @@ public class GameOverScript : MonoBehaviour
     public GameObject player;
     public GameObject player2;
 
+
+    /// \brief pops up the Game Over screen when the game ends (time runs out).
     public void Setup()
     {
         MovementController script = player.GetComponent<MovementController>();
